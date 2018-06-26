@@ -1,0 +1,25 @@
+{% if messg %}
+<script >
+        alert('{{ messg }}');
+
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <title>Login</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'seatbooking/white.css'%}" type = "text/css">
+    <title></title>
+  </head>
+  <body>
+    {% block body %}
+    {% endblock %}
+
+  </body>
+</html>
